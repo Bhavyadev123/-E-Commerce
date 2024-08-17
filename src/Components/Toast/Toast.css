@@ -1,0 +1,19 @@
+/* Toast.css */
+.toast {
+    position: fixed;
+    top: 20px; /* Position the toast 20px from the top */
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0.9;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(75px); /* Move the toast up slightly when it first appears */
+}
+
+.toast.show {
+    transform: translateY(0); /* Animate the toast into view */
+}
